@@ -123,11 +123,11 @@ console.log(quotient);
  * Console.log your result.
 */
 function checkSum(X){
-	return "Mariah has been married X amount of times.";
+	return "Mariah has been married " + X + " amount of times.";
 }
 
-var Divorce = sum;
-console.log(sum);
+var Divorce = checkSum(sum);
+console.log(Divorce);
 
 /*	
  * #7
@@ -140,11 +140,11 @@ console.log(sum);
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-function checkDifference(X){
-	return "Last night I dreamt that I ate X Taco Bell soft tacos.";
+function checkDifference(x){
+	return "Last night I dreamt that I ate " + x + " Taco Bell soft tacos.";
 }
-var stomachAche = difference;
-console.log(difference);
+var stomachAche = checkDifference(difference);
+console.log(stomachAche);
 
 
 /*
@@ -158,8 +158,11 @@ console.log(difference);
  * This function will multiply the values stored in the sum and product.
  * Console.log your result.  
 */
+function checkProduct(){
+	return (sum * product);
+}
 
-
+console.log(checkProduct());
 
 /*
  * #9
@@ -171,8 +174,11 @@ console.log(difference);
  * This function will multiply the values stored in the product and quotient.
  * Console.log your result.  
 */
+function checkQuotient(){
+	return (product * quotient);
+}
 
-
+console.log(checkQuotient());
 
 /*
  * #10
@@ -193,8 +199,14 @@ console.log(difference);
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+var bango3 = 30;
+var bango4 = 40;
+var bango5 = 50;
+function addThenSubtract(num1,num2,num3){
+	return num1 + num2 - num3;
+}
 
-
+console.log(addThenSubtract);
 
 /*
  * #11
