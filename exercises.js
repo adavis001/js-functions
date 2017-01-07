@@ -202,11 +202,12 @@ console.log(checkQuotient());
 var bango3 = 30;
 var bango4 = 40;
 var bango5 = 50;
+
 function addThenSubtract(num1,num2,num3){
 	return num1 + num2 - num3;
 }
 
-console.log(addThenSubtract);
+console.log(addThenSubtract(bango3,bango4, bango5));
 
 /*
  * #11
@@ -222,8 +223,11 @@ console.log(addThenSubtract);
  * Console.log your result.
 */ 
 
+function multiplyThenDivide(num1, num2, num3){
+	return num1 * num2 / num3;
+}
 
-
+console.log(multiplyThenDivide(bango3, bango4, bango5));
 /*
  * #12
  * Function - createFullName
@@ -235,8 +239,12 @@ console.log(addThenSubtract);
  *
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
+function createFullName(firstName, LastName){
+	return firstName + " " + LastName;
+}
 
-
+var myFullName = createFullName("Alexander", "Davis");
+console.log(myFullName);
 
 /*
  * #13 
@@ -278,7 +286,12 @@ console.log(addThenSubtract);
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
+ var res = "hi how are you";
+function allCaps(str){
+	return str.toUpperCase();
+}
+
+console.log(allCaps(res));
 
 
 /*
@@ -288,6 +301,12 @@ console.log(addThenSubtract);
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
+
+function oneCap(str){
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+console.log(oneCap(res));
 
 
 
