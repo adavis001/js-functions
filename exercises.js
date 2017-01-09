@@ -260,7 +260,7 @@ console.log(myFullName);
  * Console.log your result.
  */
 function eatFood(firstName, lastName, food){
-	return myFullName + " eats" + food + " everyday for breakfast.";
+	return myFullName + " eats " + food + " everyday for breakfast.";
 }
 var breakfast = eatFood("Alexander", "Davis", "Spam");
 console.log(breakfast);
@@ -278,8 +278,12 @@ console.log(breakfast);
  * Create a function that will take in a parameter named `inches`. This function will convert inches to centimeters(cm).
  * Console.log your result. 
 */
+function shoeSize(inches){
+	return inches * 2.5 + " centimeters";
+}
 
-
+var shaqShoeSize = shoeSize(22);
+console.log(shaqShoeSize);
 
 /*
  * #15
