@@ -248,7 +248,7 @@ console.log(myFullName);
 
 /*
  * #13 
- * Function - eatFood
+ * Function - eat
  * Create a function named eatFood which takes three parameters: `firstName`, `lastName`, `food`.
  *
  *   @param Datatype: String `firstName`
@@ -259,7 +259,11 @@ console.log(myFullName);
  * This function will use the previous `createFullName` function above to create a message. For example, if you invoked the function like this: eatFood("Biggie", "Smalls", "Won Ton Soup"); it will display the message "Biggie Smalls eats Won Ton Soup everyday for breakfast."
  * Console.log your result.
  */
-
+function eatFood(firstName, lastName, food){
+	return myFullName + " eats" + food + " everyday for breakfast.";
+}
+var breakfast = eatFood("Alexander", "Davis", "Spam");
+console.log(breakfast);
 
 
 /************** ENGAGE HYPERDRIVE **************/
@@ -317,7 +321,8 @@ console.log(oneCap(res));
  * This function returns a Boolean value, `true` or `false`, depending on 
  * whether `age` is above or below the legal drinking age in the state of Hawaii.
  *
- * Call this function and pass in a number value.
+ * Call this function and pa
+ ss in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
 
