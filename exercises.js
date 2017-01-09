@@ -325,12 +325,14 @@ console.log(oneCap(res));
  * This function returns a Boolean value, `true` or `false`, depending on 
  * whether `age` is above or below the legal drinking age in the state of Hawaii.
  *
- * Call this function and pa
- ss in a number value.
+ * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
-
-
+function verifyAge(age){
+	return age >= 21;
+}
+var canDrink = verifyAge(29);
+console.log (canDrink);
 
 /**
  * #18
